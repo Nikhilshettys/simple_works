@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nothing</title>
+</head>
+<style>
+  body{
+    background: black;
+    margin-top: rgb(129, 12, 49);
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    align-items:center;
+    background-color: aliceblue;
+  }
+  header {
+    background-color:#003366;
+    color: white;
+    padding:10px 0;
+    width: 100%;
+    text-align:center;
+    height: 50px;
+    size: 50px;
+  }
+  footer {
+      background-color: #003366;
+      color: white;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+    }
+  .container{
+    background-color:transparent;
+    padding: 30px;
+    margin: 30;
+    width: 300px;
+    border-color: black;
+    position:0;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgb(62, 62, 194);
+    cursor: pointer;
+    gap: 10px;
+    height: 1000%;
+  
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .rit{
+    font-size:10px;
+    position:center;
+  }
+  .selection {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 80px;
+    border-width:40px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  .font {
+    font-size:  40px;
+    position: center;
+    margin: 0;
+    padding:0;
+  }
+  .container1{
+    background-color:transparent;
+    padding:30px; 
+    margin: 30px;
+    width: 300px;
+    text-align: center;
+    max-width: 1000px;
+    border-color: black;
+    position:0;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgb(62, 62, 194);
+    cursor: pointer;
+    gap: 10px;
+    text-transform: uppercase;
+      
+  }
+  .cousretype{
+    width:auto;
+    margin:100%;
+    border-radius:40px;
+  }
+  .p{
+    text: size 10px;;
+  }
+  input[type="text"],
+  input[type="date"],
+  input[type="Fname"],
+  input[type="dis"],
+  input[type="home"],
+  input[type="tal"],
+  input[type="Email"],
+  input[type="tel"]{
+    width: 100%;
+    padding:8px;
+    border: 1px solid white;
+    border-radius: 41px;
+    margin-bottom: 10px;
+  }
+  button {
+  width: 80%;
+  padding: 10px;
+  background-color: #081085;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  gap: 10px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+button:hover {
+  background-color:rgb(46, 27, 156);
+  border-radius:60px;
+}
+</style> 
+<body>
+  <img src="rit.jpeg" alt="RIT Logo">
+  <header class="rit">
+    <h1>RAJEEV EDUCATION TRUST.</h1>
+  </header>
+  <progress value="40" max="100">
+  </progress>
+  
+  <main>
+    <marquee>
+      <h1>RAJEEEV INSTITUTE OF TECHNOLOGY ,HASSAN.</h1>
+    </marquee>
+    <div class="container">
+    <selection>
+      <h1 class="font">WELLCOME   TO RIT HASSAN</h1>
+      <div>
+        <h1>
+          Welcome to Rajeev boys hostel.
+        </h1>
+        <p>Hostel life is an exciting blend of independence, community, challenges, and personal growth.</p>
+      </div>
+    </selection>
+    </div>
+    <div class="container1">
+      <selection>
+        <h1>
+          Registration :
+        </h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="enter name" required>
+       
+          <label class="dob">D O B:</label>
+          <input type="date" id="dob" name="dob" required>
+        
+        
+          <label for="father">Father Name: </label>
+          <input type="Fname" name="fname" placeholder="enter Father name" required>
+        
+        
+          <label for="phone">Ph no:</label>
+            <input type="tel" name="phone" placeholder="Ph no" required>
+        
+        
+          <label for="Email">E-mail: </label>
+          <input type="email" name="Email" placeholder="enter email" required>
+        
+        
+          <label for="district">District: </label>
+          <input type="dis" name="district" placeholder="enter name" required >
+        
+        
+          <label for="taluq">Taluq: </label>
+          <input type="tal" name="taluq" placeholder="Taluq" required>
+        
+          <label for="homeadd">Home Address: </label>
+          <input type="home" name="home" placeholder="Address"required>
+          <label for="file">Application form:</label>
+          <input type="file" id="file" name="file"><br><br>
+    
+          <label for="coursetype">select course:</label>
+            <select id="coursetype" name="coursetype">
+              <datalist>
+              <option value="cousre">B.E</option>
+              <option value="bp">B.Pharma</option>
+              <option value="bams">BAMS</option>
+            </datalist>
+          </select>         
+        
+          </div>
+          <div>
+           <selection><br><br>
+            <div>
+              <button type="Reset" class="Reset">Reset</botton><br><br>
+              <button type="Submit" class="Submit">Submit</botton><br><br>
+            </div>
+           </selection> 
+          </div>
+          
+        
+      </selection>
+    </div>
+  </main>
+</body>
+<footer>
+  <p>RIT HASSAN</p>
+  <p1>@rithassan.ac</p1>
+</footer>
+</html>
